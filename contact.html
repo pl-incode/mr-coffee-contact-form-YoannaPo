@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JPol">
+    <title>Contact</title>
+
+    <!-- stylesheet linked -->
+    <link rel="stylesheet" href="css/application-co.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!--Navigation bar-->
+        <nav class="navbar" role="navigation">
+
+            <div class="navbar__container">
+                <div class="navbar__container_grouped">
+                    <a href="index.html"><img class="navbar__container_logo" alt="two coffe beans" src="assets/full_logo_white.png"></a>
+                    <ul class="navbar__container_menu">
+                        <li><a class="navbar__container_menu_link" href="index.html">Accueil </a></li>
+                        <li><a class="navbar__container_menu_link" href="about.html">Qui sommes-nous?</a></li>
+                        <li><a class="navbar__container_menu_link" href="contact.html">Nous contacter</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!--Header-->
+        <header class="header" role="banner">
+            <div class="header__container">
+                <img class="header__container_logo" alt="two coffe beans" src="assets/full_logo_dark.png">
+            </div>
+        </header>
+
+
+        <!--Form section-->
+        <div class="form-section">
+            <h1>Dites nous tout !</h1>
+            <form id="send">
+                <div class="input-group">
+                    <label for="firstname">Nom *</label>
+                    <input type="text" name="firstname" id="firstname" />
+                </div>
+
+                <div class="input-group">
+                    <label for="surname">Prénom *</label>
+                    <input type="text" name="surname" id="surname" />
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Téléphone </label>
+                    <input type="tel" name="phone" id="phone" />
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Adresse mail * </label>
+                    <input type="text" name="email" id="email" />
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message * </label>
+                    <input type="text" name="message" id="message" placeholder="Tapez votre message ici"
+                        class="text-form" />
+                </div>
+
+                <div class="input-group full">
+                    <input type="submit" value="ENVOYER" class="submit-btn" />
+                    <div class="clear"></div>
+                </div>
+                <div class="errors"></div>
+
+                <!-- Modal Section -->
+                <div class="bg-modal">
+                    <div class="modal-contents">
+
+                        <!--default closing form <div class="close">+</div> -->
+
+                        <form action="">
+                            <input type="text" class="input-modal">
+                            <img class="logo-contact-black" alt="two beans" src="assets/logo_dark.png">
+                            <h2>MERCI </h2>
+                            <h3>Votre message a bien été envoyé !</h3>
+                            <p>Nous essaierons d y répondre au mieux dans les plus brefs délais. À bientot chez
+                                Mr.Coffee</p>
+                            <a href="#" class="button">FERMER</a>
+                        </form>
+
+                    </div>
+                </div>
+                <!--Modal section -end-->
+
+            </form>
+        </div>
+
+        <!--Contact details section-->
+        <div class="contact-details">
+            <div class="contact-details-container">
+                <h2>On vous attend !</h2>
+                <address>Mr.Coffee <br>15 rue Jules Guesde<br>75014 Paris </address>
+                <p>Tel : +33 9 46 25 78 45 <br> Mail : contact@mr-coffee.com</p>
+            </div>
+        </div>
+
+
+        <!--Map section-->
+        <div class="map-section">
+            <div class="map-section-container">
+                <img class="map" alt="view of localization near Jules Gusede" src="assets\carte_contact.png">
+            </div>
+        </div>
+
+
+
+        <!--Footer-->
+        <footer class="footer" role="contentinfo">
+            <div class="footer__container">
+                <ul class="footer__container_menu">
+                    <li><a class="footer__container_menu_link"><a href="index.html"><img class="footer__container_menu_logo" alt="two coffe beans" src="assets/logo_blanc.png"></a></a>
+                    </li>
+                    <div class="footer__container_container">
+                        <li class="footer__container_container_text">Suivez nous sur les réseaux sociaux !</li>
+                        <div class="footer__container_container_menu">
+
+                            <li><a class="footer__container_menu_link" id="linkedin" href="https://www.linkedin.com/"><img class="logo-social" alt="Letters 'in'" src="assets/logo_linkedin.png"></a></a>
+                            <li><a class="footer__container_menu_link" id="twitter" href="https://twitter.com/"><img class="logo-social" alt="Little bird" src="assets/logo_twitter.png"></a></a>
+                            </li>
+                            <li><a class="footer__container_menu_link" id="facebook" href="https://www.facebook.com/"><img class="logo-social" alt="Letter f" src="assets/logo_facebook.png"></a></a>
+                            </li>
+
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+    <noscript>Sorry, your browser may not support JavaScript! orJavaScript is disabled in your browser </noscript>
+
+
+</body>
+
+</html>
