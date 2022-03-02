@@ -19,6 +19,33 @@
         <!--Navigation bar-->
         <nav class="navbar" role="navigation">
 
+            <div class="navbar__inner">
+
+                <div class="navbar__logo">
+                    <a href="index.html"><img class="navbar__logoImg" alt="two coffe beans" src="assets/full_logo_white.png"></a>
+                </div>
+
+                <ul class="navbar__list">
+                    <li class="navbar__listItem">
+                        <a class="navbar__link" href="index.html">Accueil </a>
+                    </li>
+                    <li class="navbar__listItem">
+                        <a class="navbar__link" href="about.html">Qui sommes-nous?</a>
+                    </li>
+                    <li class="navbar__listItem">
+                        <a class="navbar__link" href="contact.html">Nous contacter</a>
+                    </li>
+
+                </ul>
+            </div>
+
+    </div>
+
+    </nav>
+
+    <!--
+        <nav class="navbar" role="navigation">
+
             <div class="navbar__container">
                 <div class="navbar__container_grouped">
                     <a href="index.html"><img class="navbar__container_logo" alt="two coffe beans" src="assets/full_logo_white.png"></a>
@@ -34,116 +61,118 @@
 
         </nav>
 
+    -->
 
-        <!--Header-->
-        <header class="header" role="banner">
-            <div class="header__container">
-                <img class="header__container_logo" alt="two coffe beans" src="assets/full_logo_dark.png">
+
+    <!--Header-->
+    <header class="header" role="banner">
+        <div class="header__container">
+            <img class="header__container_logo" alt="two coffe beans" src="assets/full_logo_dark.png">
+        </div>
+    </header>
+
+
+    <!--Form section-->
+    <div class="form-section">
+        <h1>Dites nous tout !</h1>
+        <form id="send">
+            <div class="input-group">
+                <label for="firstname">Nom *</label>
+                <input type="text" name="firstname" id="firstname" />
             </div>
-        </header>
 
+            <div class="input-group">
+                <label for="surname">Prénom *</label>
+                <input type="text" name="surname" id="surname" />
+            </div>
 
-        <!--Form section-->
-        <div class="form-section">
-            <h1>Dites nous tout !</h1>
-            <form id="send">
-                <div class="input-group">
-                    <label for="firstname">Nom *</label>
-                    <input type="text" name="firstname" id="firstname" />
+            <div class="input-group">
+                <label for="phone">Téléphone </label>
+                <input type="tel" name="phone" id="phone" />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Adresse mail * </label>
+                <input type="text" name="email" id="email" />
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message * </label>
+                <input type="text" name="message" id="message" placeholder="Tapez votre message ici"
+                    class="text-form" />
+            </div>
+
+            <div class="input-group full">
+                <input type="submit" value="ENVOYER" class="submit-btn" />
+                <div class="clear"></div>
+            </div>
+            <div class="errors"></div>
+
+            <!-- Modal Section -->
+            <div class="bg-modal">
+                <div class="modal-contents">
+
+                    <!--default closing form <div class="close">+</div> -->
+
+                    <form action="">
+                        <input type="text" class="input-modal">
+                        <img class="logo-contact-black" alt="two beans" src="assets/logo_dark.png">
+                        <h2>MERCI </h2>
+                        <h3>Votre message a bien été envoyé !</h3>
+                        <p>Nous essaierons d y répondre au mieux dans les plus brefs délais. À bientot chez
+                            Mr.Coffee</p>
+                        <a href="#" class="button">FERMER</a>
+                    </form>
+
                 </div>
+            </div>
+            <!--Modal section -end-->
 
-                <div class="input-group">
-                    <label for="surname">Prénom *</label>
-                    <input type="text" name="surname" id="surname" />
-                </div>
+        </form>
+    </div>
 
-                <div class="input-group">
-                    <label for="phone">Téléphone </label>
-                    <input type="tel" name="phone" id="phone" />
-                </div>
+    <!--Contact details section-->
+    <div class="contact-details">
+        <div class="contact-details-container">
+            <h2>On vous attend !</h2>
+            <address>Mr.Coffee <br>15 rue Jules Guesde<br>75014 Paris </address>
+            <p>Tel : +33 9 46 25 78 45 <br> Mail : contact@mr-coffee.com</p>
+        </div>
+    </div>
 
-                <div class="input-group">
-                    <label for="email">Adresse mail * </label>
-                    <input type="text" name="email" id="email" />
-                </div>
 
-                <div class="input-group">
-                    <label for="message">Message * </label>
-                    <input type="text" name="message" id="message" placeholder="Tapez votre message ici"
-                        class="text-form" />
-                </div>
+    <!--Map section-->
+    <div class="map-section">
+        <div class="map-section-container">
+            <img class="map" alt="view of localization near Jules Gusede" src="assets\carte_contact.png">
+        </div>
+    </div>
 
-                <div class="input-group full">
-                    <input type="submit" value="ENVOYER" class="submit-btn" />
-                    <div class="clear"></div>
-                </div>
-                <div class="errors"></div>
 
-                <!-- Modal Section -->
-                <div class="bg-modal">
-                    <div class="modal-contents">
 
-                        <!--default closing form <div class="close">+</div> -->
-
-                        <form action="">
-                            <input type="text" class="input-modal">
-                            <img class="logo-contact-black" alt="two beans" src="assets/logo_dark.png">
-                            <h2>MERCI </h2>
-                            <h3>Votre message a bien été envoyé !</h3>
-                            <p>Nous essaierons d y répondre au mieux dans les plus brefs délais. À bientot chez
-                                Mr.Coffee</p>
-                            <a href="#" class="button">FERMER</a>
-                        </form>
-
-                    </div>
-                </div>
-                <!--Modal section -end-->
-
-            </form>
+    <!--Footer-->
+    <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__link link"><img alt="two coffe beans" src="assets/logo_blanc.png" class="footer__logoImg"></a>
+            </div>
+            <div class="footer__socialMedia">
+                <span class="footer__header">Suivez nous sur les réseaux sociaux &nbsp;!</span>
+                <ul class="footer__socialMediaList">
+                    <li class="footer__socialMediaItem">
+                        <a href="https://www.linkedin.com/" class="footer__link link"><img src="assets/logo_linkedin.png" class="footer__socialMediaImg" alt="Letters 'in'"></a>
+                    </li>
+                    <li class="footer__socialMediaItem">
+                        <a href="https://twitter.com/" class="footer__link link"><img src="assets/logo_twitter.png" class="footer__socialMediaImg" alt="Little bird"></a>
+                    </li>
+                    <li class="footer__socialMediaItem">
+                        <a href="https://www.facebook.com" class="footer__link link"><img src="assets/logo_facebook.png" class="footer__socialMediaImg" alt="Letter f"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <!--Contact details section-->
-        <div class="contact-details">
-            <div class="contact-details-container">
-                <h2>On vous attend !</h2>
-                <address>Mr.Coffee <br>15 rue Jules Guesde<br>75014 Paris </address>
-                <p>Tel : +33 9 46 25 78 45 <br> Mail : contact@mr-coffee.com</p>
-            </div>
-        </div>
-
-
-        <!--Map section-->
-        <div class="map-section">
-            <div class="map-section-container">
-                <img class="map" alt="view of localization near Jules Gusede" src="assets\carte_contact.png">
-            </div>
-        </div>
-
-
-
-        <!--Footer-->
-        <footer class="footer" role="contentinfo">
-            <div class="footer__inner">
-                <div class="footer__logo">
-                    <a href="index.html" class="footer__link link"><img alt="two coffe beans" src="assets/logo_blanc.png" class="footer__logoImg"></a>
-                </div>
-                <div class="footer__socialMedia">
-                    <span class="footer__header">Suivez nous sur les réseaux sociaux &nbsp;!</span>
-                    <ul class="footer__socialMediaList">
-                        <li class="footer__socialMediaItem">
-                            <a href="https://www.linkedin.com/" class="footer__link link"><img src="assets/logo_linkedin.png" class="footer__socialMediaImg" alt="Letters 'in'"></a>
-                        </li>
-                        <li class="footer__socialMediaItem">
-                            <a href="https://twitter.com/" class="footer__link link"><img src="assets/logo_twitter.png" class="footer__socialMediaImg" alt="Little bird"></a>
-                        </li>
-                        <li class="footer__socialMediaItem">
-                            <a href="https://www.facebook.com" class="footer__link link"><img src="assets/logo_facebook.png" class="footer__socialMediaImg" alt="Letter f"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
+    </footer>
 
 
 
