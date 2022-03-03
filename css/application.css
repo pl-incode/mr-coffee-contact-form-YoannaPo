@@ -1,0 +1,317 @@
+/*Add stylesheet to the main css file / for home page*/
+@import "reset.css";
+@import "nav.css";
+@import "footer.css";
+
+@font-face {
+    font-family: 'AvenirNext-Regular';
+    src: url("fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'AvenirNext-Bold';
+    src: url("fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'AvenirNext-Regular', sans-serif;
+    background-color: #F5F5F5;
+}
+
+
+h1 {
+    font-size: 36px;
+    font-family: 'AvenirNext-Bold';
+}
+
+
+h2 {
+    font-size: 30px;
+    font-family: 'AvenirNext-Bold';
+}
+
+
+h3 {
+    font-size: 24px;
+    font-family: 'AvenirNext-Bold';
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'AvenirNext-Bold';
+}
+
+
+p {
+    font-size: 14px;
+    font-family: 'AvenirNext-Regular';
+}
+
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas:
+        "n n n n n n n n n n n n"
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "sl sl sl sl sl sl sl sl sl sl sl sl"
+        "sp sp sp sp sp sp sp sp sp sp sp sp"
+        "f f f f f f f f f f f f"
+}
+
+
+/*Main*/
+.main-intro {
+    position: relative;
+    grid-area: m;
+    grid-area: 3/2/3/12;
+    min-height: 880px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.main-container h1 {
+    color: #ffffff;
+    margin-top: 82px;
+
+    /*add blur to the main text*/
+    filter: drop-shadow(0px 4px 8px black);
+
+    position: absolute;
+}
+
+.welcome-img {
+    display: block;
+    /*width: 1247px; */
+    width: 100%;
+    min-height: 795px;
+    background-size: cover;
+    background-position: center, center;
+}
+
+.main-container h2 {
+    position: absolute;
+    color: #5C5B5B;
+    /*margin-top: 82px; 
+    margin-bottom: 82px; */
+    margin-top: 830px;
+    margin-bottom: 82px;
+    text-align: center;
+}
+
+
+
+.section-love {
+    position: relative;
+    grid-area: sl;
+    grid-area: 4/2/4/12;
+}
+
+.section-love-container {
+    position: absolute;
+
+    margin-top: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.section-love-container h2 {
+    color: #5C5B5B;
+    margin-top: 82px;
+    margin-bottom: 82px;
+    text-align: center;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-container {
+
+    width: 100%;
+    height: 418px;
+    background-color: rgba(106, 123, 139, .42);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 44px;
+    padding-left: 44px;
+}
+
+.divider {
+    margin-right: 50px;
+}
+
+figure {
+
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.card-img {
+    width: 122px;
+    height: 122px;
+
+    background-size: cover;
+
+    align-self: center;
+
+    margin-top: 50px;
+}
+
+
+figure h3 {
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 1px black);
+
+    align-self: center;
+    margin-top: 25px;
+}
+
+figure p {
+    align-self: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+
+/*Button*/
+.card-button {
+    margin-top: 82px;
+    background-color: #6A7B8B;
+    width: 332px;
+    height: 77px;
+    border-radius: 20px;
+
+}
+
+.card-button a {
+    text-decoration: none;
+}
+
+a .button-text {
+    font-size: 26px;
+    font-family: 'AvenirNext-Bold';
+    color: #ffffff;
+}
+
+
+/*Section program*/
+.section-program {
+    position: relative;
+    grid-area: sp;
+    grid-area: 5/2/5/12;
+
+}
+
+.section-program-container {
+    margin-top: 1500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-program-container h2 {
+    color: #5C5B5B;
+    text-align: center;
+}
+
+.program-img-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+
+.icon-open {
+    width: 107px;
+    height: 107px;
+    margin-right: 20px;
+}
+
+.program-img-container p {
+    color: #5C5B5B;
+    font-size: 26px;
+
+    align-self: center;
+    justify-self: flex-start;
+}
+
+
+
+/*Program column container for left and right*/
+.program-text-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/*Left/Rigt part section- program*/
+.program-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 545px;
+    height: 349px;
+
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.program-text-container p {
+    text-align: center;
+    color: #5C5B5B;
+    font-size: 26px;
+    align-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.program-text-container p+p {
+    margin-top: 50px;
+}
+
+/*Last two texts form the section program*/
+.summary-text,
+.summary-h4 {
+    color: #5C5B5B;
+    align-self: center;
+    margin: 50px;
+}
+
+.summary-text {
+    font-size: 26px;
+}
+
+.summary-h4 {
+    font-size: 32px;
+    margin-bottom: 82px;
+}
