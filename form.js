@@ -90,12 +90,12 @@ else {
 }
 
 function handleErrors(errs) {
-    let str = "You have errors in the following fields: ";
+    let str = "You have errors in the following fields:  ";
 
     //add class "error" to the element
     errs.map((er) => {
         er.el.classList.add('error');
-        str += er.text + " ,  ";
+        str += er.text + ", ";
     });
 
     //add focus to first error
