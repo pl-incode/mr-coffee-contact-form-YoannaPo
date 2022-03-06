@@ -211,6 +211,7 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
+    /*z-index: 19;*/
 }
 
 .modal-contents {
@@ -224,13 +225,16 @@ p {
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 20;
 }
 
 /*Button fermer*/
 a .button {
-    text-decoration: none;
-    margin-top: 60px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .input-modal {
@@ -241,9 +245,17 @@ a .button {
     align-items: center;
 }
 
+.modal-logo-h {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo-contact-black {
     width: 93px;
     height: 137px;
+    margin-right: 50px;
 }
 
 .close {
@@ -277,6 +289,10 @@ a .button {
 
     padding: 20px;
     letter-spacing: 2px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
