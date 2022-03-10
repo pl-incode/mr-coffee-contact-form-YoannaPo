@@ -161,7 +161,6 @@ li .navbar__container_menu_link a {
     }
 
     .navbar__inner {
-        display: flex;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -169,13 +168,13 @@ li .navbar__container_menu_link a {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: wrap;
     }
 
     .navbar__logo {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-self: center;
         /*flex-wrap: wrap; */
@@ -186,4 +185,37 @@ li .navbar__container_menu_link a {
         flex-wrap: wrap;
         align-items: center;
     }
+
+
+    .header {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .navbar__logo {
+        width: 30%;
+        flex-basis: 48%;
+    }
+
+    .navbar__list {
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-basis: 49%;
+    }
+
+    .navbar__listItem {
+        width: 60%;
+    }
+
+    .navbar__link {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
 }
