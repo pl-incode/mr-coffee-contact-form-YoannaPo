@@ -152,3 +152,38 @@ li .navbar__container_menu_link a {
     height: 80px;
     align-items: center;
 }
+
+
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        height: 150px;
+    }
+
+    .navbar__inner {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .navbar__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        /*flex-wrap: wrap; */
+
+    }
+
+    .navbar__list {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
