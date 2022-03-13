@@ -342,12 +342,31 @@ a .button-text {
         margin-bottom: 50px;
     }
 
+    /* .section-program-container {
+        flex-wrap: wrap;
+    } */
+
+
+
 
     .section-program-container h2 {
         margin-top: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
     }
 
+    .program-img-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
 
+    }
 
-    /*add flex column*/
+    /*Last two texts form the section program*/
+    .summary-text,
+    .summary-h4 {
+        align-self: center;
+        margin-top: 200px;
+    }
 }
