@@ -3,7 +3,7 @@
 > A simple responsive website created for the INCODE project. 
 
 ## Live
-https://
+https://pl-incode.github.io/mr-coffee-contact-form-YoannaPo/
 
 ## Table of contents
 * [General info](#general-info)
@@ -37,4 +37,4 @@ Project is:  _in_progress_
 
 
 ## Room for Improvement
-You can add BEM here - for the remaining page content, simplifying the form validation record (breakdown into several smaller functions).
+You can add BEM - for the remaining page content, simplifying the form validation record (breakdown into several smaller functions).
