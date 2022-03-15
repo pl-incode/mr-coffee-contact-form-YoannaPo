@@ -359,4 +359,33 @@ address {
     }
 }
 
-@media screen and (max-width: 930px) {}
+@media screen and (max-width: 520px) {
+
+    .contact-details-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .map-section {
+        min-height: 300px;
+    }
+
+    .map-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .map {
+        min-width: 40%;
+        height: 250px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
