@@ -354,14 +354,30 @@ a .button-text {
         display: flex;
         flex-wrap: wrap;
         align-self: center;
+        justify-content: center;
     }
 
     .program-img-container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin-top: 60px;
 
     }
+
+    .program-text-main-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .program-text-container {
+        align-items: center;
+        justify-items: center;
+    }
+
+
+
 
     /*Last two texts form the section program*/
     .summary-text,
