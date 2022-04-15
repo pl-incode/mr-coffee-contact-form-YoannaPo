@@ -1,0 +1,61 @@
+/*Footer*/
+
+.footer {
+    grid-area: f;
+    background-color: #6A7B8B;
+    height: 142px;
+    position: relative;
+}
+
+.footer__inner {
+    /*display: grid;
+    grid-area: 6/2/6/7;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*Footer brand logo*/
+.footer__logoImg {
+    width: 53px;
+    height: 78px;
+}
+
+.footer_socialMedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__header {
+    font-weight: bolder;
+    color: #ffff;
+    font-size: 16px;
+}
+
+.footer__socialMediaList {
+    display: flex;
+}
+
+.footer__socialMediaItem {
+    list-style: none;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+
+/*Img Social Icons*/
+.footer__socialMediaImg {
+    width: 28px;
+    height: 28px;
+    margin-right: 50px;
+}
